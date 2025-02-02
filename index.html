@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Code Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Online Code Editor</h2>
+    <div id="tabs">
+        <div class="tab active" data-file="html">index.html</div>
+        <div class="tab" data-file="css">style.css</div>
+        <div class="tab" data-file="js">index.js</div>
+        <button id="addFileButton">+ Add File</button>
+    </div>
+    <div id="editor" contenteditable="true" data-file="html"></div>
+    <button onclick="compileCode()">Run</button>
+    <iframe id="output"></iframe>
+
+    <script src="index.js"></script>
+</body>
+</html>
